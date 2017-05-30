@@ -1,0 +1,28 @@
+{
+  "name": "scriptapi",
+  "version": "1.0.0",
+  "description": "Fun API written in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FosterFromGloucester/scriptapi.git"
+  },
+  "keywords": [
+    "javascript",
+    "rest",
+    "api"
+  ],
+  "author": "James Fsoter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FosterFromGloucester/scriptapi/issues"
+  },
+  "homepage": "https://github.com/FosterFromGloucester/scriptapi#readme",
+  "dependencies": {
+    "connect": "^3.6.2",
+    "express": "^4.15.3"
+  }
+}
