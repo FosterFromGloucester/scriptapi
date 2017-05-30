@@ -23,6 +23,8 @@
   "homepage": "https://github.com/FosterFromGloucester/scriptapi#readme",
   "dependencies": {
     "connect": "^3.6.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "pi-gpio": "0.0.8",
+    "request": "^2.81.0"
   }
 }

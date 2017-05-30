@@ -1,6 +1,8 @@
 var http = require('http');
 var express = require('express');
 var gpio = require('pi-gpio');
+var requests = require('request');
+
 var app = express();
 
 app.use(express['static'](__dirname));
@@ -25,8 +27,15 @@ app.get('/input_state/:pin',function(req,res){
 	gpio.close(req.params.pin);
 });
 
-app.get('/weather/',function(req,res){
-	
+app.get('/weather/:lat.:long',function(req,res){
+	var lat,long,base_url,token;
+	lat = req.params['lat'];
+	long = req.params['long'];
+	token = "3d893975dbfa53a17b2b197dd6c03780"
+	base_url = String.format("https://api.darksky.net/forecast/{0}/{1},{2}",token,lat,long);
+	requests(base_url,function(error,response,body){
+
+	});
 });
 
 app.get('*',function(req,res){
